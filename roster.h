@@ -42,6 +42,9 @@ public:
 	void remove(string studentID);
 	/*Destructor*/
 	~Roster();
+
+private: 
+	const int Roster_Size = 5;
 };
 
 

@@ -71,19 +71,11 @@ void Roster::add(string studentID, string firstName, string lastName, string ema
 
 /*displays all students and adds a header*/
 void Roster::printAll() {
-	/*Header for each student*/
-	cout << "Student ID|First Name|Last Name|Email Address|Age|Days in Courses|Degree Program\n";
-	for (int i = 0; i <= Roster::Index; i++) {
-		cout << classRosterArray[i]->getstudentID(); cout << '\t';
-		cout << classRosterArray[i]->getfirstName(); cout << '\t';
-		cout << classRosterArray[i]->getlastName(); cout << '\t';
-		cout << classRosterArray[i]->getemailAddress(); cout << '\t';
-		cout << classRosterArray[i]->getage(); cout << '\t';
-		cout << classRosterArray[i]->getdays()[0]; cout << '\t';
-		cout << classRosterArray[i]->getdays()[1]; cout << '\t';
-		cout << classRosterArray[i]->getdays()[2]; cout << '\t';
-		cout << DegreeProgramStrings[classRosterArray[i]->getdegreeprogram()] << std::endl;
-	}
+	int i = 0; {
+    for (int i = 0; i < Roster_Size; i++) {
+			classRosterArray[i]->print();
+		}
+    }
 }
 
 

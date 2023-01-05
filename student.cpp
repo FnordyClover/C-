@@ -87,7 +87,7 @@ void Student::print() {
 	cout << this->getfirstName() << '\t';
 	cout << this->getlastName() << '\t';
 	cout << this->getemailAddress() << '\t';
-	cout << this->getage() << '\t';
+	cout << this->getage() << '\t';public void printAll() that prints a complete tab-separated list of student data in the provided format: A1 [tab] First Name: John [tab] Last Name: Smith [tab] Age: 20 [tab]daysInCourse: {35, 40, 55} Degree Program: Security. The printAll() function should loop through all the students in classRosterArray and call the print() function for each student.
 	cout << this->getdays()[0] << ',';
 	cout << this->getdays()[1] << ',';
 	cout << this->getdays()[2] << '\t';
